@@ -1,18 +1,19 @@
 .App {
+  display: block;
   height: 10rem;
   align-self: center;
 }
 .header--container {
   position: relative;
   display: flex;
+  padding: 40px;
 }
 .header--logo {
   justify-content: center;
 }
 .App--page1 {
-  padding: 40px;
   background-color: black;
-  height: 100vh;
+  height: 1000px;
 }
 .header--menu {
   position: absolute;
@@ -22,6 +23,7 @@
   padding: 10px;
 }
 .App--hero {
+  display: block;
   position: relative;
 }
 .hero--img {
@@ -29,16 +31,33 @@
 }
 .hero--text {
   position: absolute;
-  left: 470px;
+  left: 32vw;
   z-index: 1;
-  transition: "1s, transform 2s";
-  transform: scale(1.5);
+  /* transition: "1s, transform 2s";
+  transform: scale(1.5); */
 }
 .hero--img1 {
   position: absolute;
-  left: 500px;
+  left: 32vw;
 }
 .hero--crowd1 {
   position: absolute;
-  top: 300px;
+  top: 350px;
+}
+.hero--crowd2 {
+  position: absolute;
+  top: 450px;
+}
+.hero--crowd3 {
+  position: absolute;
+  top: 638px;
+}
+.App--page2 {
+  display: flex;
+}
+.card--container {
+  width: 25%;
+  padding: 8px;
+  margin: 20px;
+  background-color: #e2e1d3;
 }
