@@ -1,4 +1,5 @@
 .App {
+<<<<<<< Updated upstream
   text-align: center;
 }
 
@@ -16,10 +17,19 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
+=======
+  height: 10rem;
+  align-self: center;
+  position: relative;
+}
+.header--container {
+  position: relative;
+>>>>>>> Stashed changes
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+<<<<<<< Updated upstream
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +45,57 @@
   to {
     transform: rotate(360deg);
   }
+=======
+}
+.App--page1 {
+  padding: 40px;
+  background-color: black;
+  height: 100vh;
+}
+.header--menu {
+  position: absolute;
+  right: 50px;
+}
+.header--element {
+  padding: 10px;
+}
+.App--hero {
+  position: relative;
+}
+.hero--img {
+  position: relative;
+}
+.hero--text {
+  position: absolute;
+  left: 470px;
+  transition: "1s, transform 2s";
+  transform: scale(1.5);
+}
+.hero--img1 {
+  position: absolute;
+  left: 500px;
+}
+.hero--crowd1 {
+  position: absolute;
+  top: 300px;
+>>>>>>> Stashed changes
+}
+#drop{
+  background-color: rgba(0,0,0,0.8);
+  color:white;
+  font-size: 35px;
+  padding: 20px;
+  position: absolute;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  display: none;
+  animation-name: none;
+  animation-duration: 4000s;
+  
+}
+@keyframes dropp {
+  0%{ height: 0vh; }
+  0.04%{ height: 100vh;}
+  
 }
