@@ -32,7 +32,6 @@
 .hero--text {
   position: absolute;
   left: 32vw;
-  z-index: 1;
   /* transition: "1s, transform 2s";
   transform: scale(1.5); */
 }
@@ -60,4 +59,23 @@
   padding: 8px;
   margin: 20px;
   background-color: #e2e1d3;
+}
+#drop{
+  background-color: rgba(0,0,0,0.8);
+  color:white;
+  font-size: 35px;
+  padding: 0px 50px;
+  position: absolute;
+  width: 92vw;
+  top: 0px;
+  left: 0px;
+  display: none;
+  animation-name: none;
+  animation-duration: 4000s;
+
+}
+@keyframes dropp {
+  0%{ height: 0vh; }
+  0.04%{ height: 100vh;}
+
 }
