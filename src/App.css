@@ -85,6 +85,7 @@
   display: grid;
   align-items: center;
   background-color: #101010;
+  height: 50vh;
   padding: 70px;
   grid-template-areas:
     "footer--logo footer--logo footer--text"
