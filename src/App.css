@@ -81,6 +81,52 @@
     height: 100vh;
   }
 }
+.footer {
+  display: grid;
+  align-items: center;
+  background-color: #101010;
+  padding: 70px;
+  grid-template-areas:
+    "footer--logo footer--logo footer--text"
+    "footer--logo footer--logo footer--text";
+}
+
+.footer--logo {
+  display: grid;
+  grid-area: 1/1/4/4;
+}
+.footer--text {
+  padding-left: 180px;
+  display: grid;
+  color: rgb(255, 255, 255);
+  grid-area: 1/2/5/6;
+}
+.footer--menu {
+  display: flex;
+  color: aliceblue;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+
+  color: #ffffff;
+}
+.footer--menu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer--menu li {
+  padding: 40px;
+}
+.footer hr {
+  width: 100%;
+}
+.footer--instagram {
+  display: flex;
+  justify-self: end;
+}
 /* #hero--text {
   animation-name: hero--anim;
   animation-duration: 2s;
