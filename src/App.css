@@ -60,9 +60,9 @@
   margin: 20px;
   background-color: #e2e1d3;
 }
-#drop{
-  background-color: rgba(0,0,0,0.8);
-  color:white;
+#drop {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
   font-size: 35px;
   padding: 0px 50px;
   position: absolute;
@@ -72,10 +72,24 @@
   display: none;
   animation-name: none;
   animation-duration: 4000s;
-
 }
 @keyframes dropp {
-  0%{ height: 0vh; }
-  0.04%{ height: 100vh;}
-
+  0% {
+    height: 0vh;
+  }
+  0.04% {
+    height: 100vh;
+  }
 }
+/* #hero--text {
+  animation-name: hero--anim;
+  animation-duration: 2s;
+}
+@keyframes hero--anim {
+  0% {
+    color: aqua;
+  }
+  00.04% {
+    color: aquamarine;
+  }
+} */
