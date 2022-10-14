@@ -1,3 +1,28 @@
+# 🏷️ What is Hacktoberfest ? 💻
+➡️ Hacktoberfest is a month-long celebration of open source software run by DigitalOcean.
+
+➡️ During the month of October, they invite you to join open-source software enthusiasts, beginners, and the developer community by       contributing to open-source projects.
+
+➡️ So, make your contributions to make this Hacktoberfest a success, with a chance to receive cool swags and give yourself a       headstart in your open source journey.
+
+# 🏷️ Participation Rules 📝
+➡️ Pull requests can be made to any public repository on GitHub, look for the "hacktoberfest" topic to know whether the project is participating or not. The pull request must contain commits you made yourself.
+
+➡️ If a maintainer reports your pull request as 🔴 spam , it will not be counted towards your participation in Hacktoberfest.
+
+➡️ If a maintainer reports behavior that’s not in line with the project’s code of conduct, you will be ineligible to participate.
+
+# 🏷️ Rules Regarding Submission of PR 🔖
+➡️ Participant can contribute anything he wishes for.
+
+➡️ Make sure to pull request in the respective folder.
+
+➡️ Your PR must be valid.
+
+➡️ Don't just copy and paste code from other website/blogs .
+
+➡️ Submitting someone else work will be reported as 🔴spam.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
