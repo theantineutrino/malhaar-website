@@ -4,7 +4,7 @@ import "../App.css";
 export default function Footer() {
   return (
     <div className="footer">
-      <img src={logo} alt="" className="footer--logo" width="300px" />
+      <img src={logo} alt="" className="footer--logo" width="270vw" />
       <div className="footer--text">
         Lorem ipsum dolor sit amet, <br></br>consectetur adipiscing elit. Duis
         augue justo, porttitor <br></br>vitae felis nec, molestie sodales mi.
