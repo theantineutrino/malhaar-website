@@ -3,10 +3,11 @@ import Footer from "../ux/Footer";
 import mail from "../images/envel.png";
 import phone from "../images/phone.png";
 import loc from "../images/loc.png";
+import bg from "../images/contactbg.png";
 export default function ContactUs() {
   return (
     <div>
-      <div className="contact">
+      <div className="contact" style={{ backgroundImage: "url(" + bg + ")" }}>
         <div className="contact--grid1">
           <h1>CONTACT US</h1>
           <p>
