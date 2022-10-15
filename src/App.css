@@ -90,6 +90,7 @@
   background-color: #000000;
   height: 50vh;
   padding: 70px;
+  padding-top: 0%;
   grid-template-areas:
     "footer--logo footer--logo footer--text"
     "footer--logo footer--logo footer--text";
@@ -133,7 +134,8 @@
 }
 .contact {
   display: flex;
-  padding: 100px;
+  padding: 10vw;
+  padding-bottom: 0%;
 }
 .contact--grid1 {
   width: 50%;
