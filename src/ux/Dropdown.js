@@ -1,7 +1,7 @@
 import "../App.css";
 import "react-dom";
-import ContactU from "./ContactUs";
-import About from "./About";
+import ContactU from "../components/ContactUs";
+import About from "../components/About";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 function hide() {
   document.getElementById("drop").style.display = "none";
@@ -18,9 +18,9 @@ export default function Dropdown() {
           width: "30px",
           height: "30px",
           fontSize: "30px",
-          color: "white",
+          color: "black",
           border: "none",
-          backgroundColor: "black",
+          backgroundColor: "white",
         }}
         onClick={hide}
       >
@@ -31,7 +31,7 @@ export default function Dropdown() {
       <br />
       <br />
       <Router>
-        <div className="hero--text--dropdown" id="hero--text">
+        <div className="hero--text--dropdown">
           <Link to="/About">ABOUT</Link>
           <br />
           <Link to="/">HOME</Link>

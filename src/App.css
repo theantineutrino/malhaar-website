@@ -61,8 +61,8 @@
   background-color: #e2e1d3;
 }
 #drop {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
+  background-color: rgb(253, 253, 253);
+  color: black;
   font-size: 35px;
   padding: 0px 50px;
   position: absolute;
@@ -80,6 +80,9 @@
   0.04% {
     height: 100vh;
   }
+}
+.hero--text--dropdown {
+  text-decoration: none;
 }
 .footer {
   display: grid;
@@ -128,9 +131,53 @@
   display: flex;
   justify-self: end;
 }
+.contact {
+  display: flex;
+  padding: 100px;
+}
+.contact--grid1 {
+  width: 50%;
+}
 .contact--sus {
   padding: 20px;
-  padding-left: 0%;
+  padding-left: 30px;
+}
+.contact--grid2 {
+  position: absolute;
+  width: 50%;
+  padding: 50px;
+  z-index: 1;
+  align-content: center;
+  background: #eeeeee;
+  box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  height: 450px;
+  left: 700px;
+}
+.contact--grid2 button {
+  background: #d6382f;
+  border-radius: 20px;
+  border: none;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  width: 90%;
+  margin: 10px;
+}
+.grid2--input1 {
+  border: 1px solid #f80303;
+  width: 90%;
+  margin: 10px;
+  height: 40px;
+}
+.grid2--input2 {
+  border: 1px solid #f80303;
+  width: 90%;
+  margin: 10px;
+  height: 170px;
 }
 /* #hero--text {
   animation-name: hero--anim;

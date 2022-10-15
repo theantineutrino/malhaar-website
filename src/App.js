@@ -3,7 +3,7 @@ import background from "./images/background.png";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
-import Dropdown from "./components/Dropdown";
+import Dropdown from "./ux/Dropdown";
 import ContactUs from "./components/ContactUs";
 function App() {
   return (
