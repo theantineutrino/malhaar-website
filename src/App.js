@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Card from "./components/Card";
 import Dropdown from "./ux/Dropdown";
 import ContactUs from "./components/ContactUs";
+import ImageCarousal from "./components/ImageCarousal/ImageCarousal";
 function App() {
   return (
     <div className="App">
@@ -28,6 +29,8 @@ function App() {
         <Card title="25+" content="hello this is a mic test lmao lmao" />
         <Card title="25+" content="hello this is a mic test lmao lmao" />
       </div>
+      <ImageCarousal></ImageCarousal>
+
       <ContactUs />
     </div>
   );
