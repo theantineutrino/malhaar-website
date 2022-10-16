@@ -1,4 +1,3 @@
-
 import img2 from '../../assets/img2.png';
 import bg from '../../assets/bg.png';
 import pepsi from '../../assets/pepsi.png';
@@ -8,7 +7,7 @@ import microsoft from '../../assets/microsoft.png';
 import goldman from '../../assets/goldman.png';
 import classes from './Sponsors.module.css';
 
-function Sponsors() {
+const Sponsors = () => {
     return (
         <div className={classes.sponsors}>
             <img src={img2} alt="Sponsors" />

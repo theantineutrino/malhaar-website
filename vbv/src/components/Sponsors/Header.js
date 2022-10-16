@@ -1,4 +1,3 @@
-
 import img1 from '../../assets/img1.png';
 import logo from '../../assets/logo.png';
 import bg from '../../assets/bg.png';

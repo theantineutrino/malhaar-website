@@ -1,9 +1,9 @@
 import './App.css';
-import Header from './components/Header/Header';
-import Sponsors from './components/Header/Sponsors';
+import Header from './components/Sponsors/Header';
+import Sponsors from './components/Sponsors/Sponsors';
 import Footer from './components/UI/Footer';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header />
