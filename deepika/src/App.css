@@ -1,0 +1,56 @@
+body
+{
+  background-color:black;
+}
+.set
+{
+  display: flex;
+  flex-direction: row;
+}
+.footer {
+  display: grid;
+  align-items: center;
+  background-color: #000000;
+  height: 50vh;
+  padding: 70px;
+  grid-template-areas:
+    "footer--logo footer--logo footer--text"
+    "footer--logo footer--logo footer--text";
+}
+
+.footer--logo {
+  display: grid;
+  grid-area: 1/1/4/4;
+}
+.footer--text {
+  padding-left: 180px;
+  display: grid;
+  color: rgb(255, 255, 255);
+  grid-area: 1/2/5/6;
+}
+.footer--menu {
+  display: flex;
+  color: aliceblue;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+
+  color: #ffffff;
+}
+.footer--menu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer--menu li {
+  padding: 0.6vw;
+}
+.footer hr {
+  width: 100%;
+}
+/* .footer--instagram {
+  display: flex;
+  justify-self: end;
+} */
