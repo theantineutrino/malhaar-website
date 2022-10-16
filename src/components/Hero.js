@@ -8,11 +8,11 @@ import text from "../images/Malhaar22.png";
 export default function Hero() {
   return (
     <div className="hero--img">
-      <div className="hero--img1">
-        <img src={hero} alt="" width="82%" />
-      </div>
       <div className="hero--text">
         <img src={text} alt="" width="60%" />
+      </div>
+      <div className="hero--img1">
+        <img src={hero} alt="" width="82%" />
       </div>
       <div className="hero--crowd1">
         <img src={crowd1} alt="" width="100%" />

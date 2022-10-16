@@ -27,15 +27,18 @@
   position: relative;
 }
 .hero--img {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.hero--text {
+/* .hero--text {
   position: absolute;
   left: 32vw;
   /* transition: "1s, transform 2s";
   transform: scale(1.5); */
-}
-.hero--img1 {
+
+/* .hero--img1 {
   position: absolute;
   left: 32vw;
 }
@@ -50,7 +53,7 @@
 .hero--crowd3 {
   position: absolute;
   top: 638px;
-}
+} */
 .App--page2 {
   display: flex;
 }
