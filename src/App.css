@@ -24,6 +24,7 @@
 .hero--img {
   display: flex;
   flex-direction: column;
+}
 
 .hero--crowds {
   background-color: black;
@@ -44,7 +45,7 @@
 .hero--crowd3 {
   width: 100%;
   position: absolute;
-  
+}
 .App--page2 {
   display: flex;
 }
