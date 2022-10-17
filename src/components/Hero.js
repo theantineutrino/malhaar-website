@@ -9,7 +9,6 @@ import text from "../images/Malhaar22.png";
 export default function Hero() {
   return (
     <div className="hero--img">
-
       <div className="hero--text">
         <img src={text} alt="" width="100%" height="auto" />
       </div>
