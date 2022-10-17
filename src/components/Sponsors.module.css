@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans:wght@700&family=Poiret+One&display=swap");
+
+.container2 img {
+  position: absolute;
+}
+.sponsors {
+  background-color: black;
+}
+.container2 {
+  position: relative;
+}
+
+.container2 h2 {
+  position: absolute;
+  z-index: 3;
+  color: white;
+  font-size: 2.5rem;
+  font-family: "Open Sans", sans-serif;
+  padding-left: 2rem;
+}
+
+.sponsors img {
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg2 {
+  margin-top: 12rem;
+}
+
+.goldman {
+  padding-top: 6rem;
+  padding-left: 15rem;
+  width: 35% !important;
+  height: auto !important;
+}
+
+.gold {
+  padding-top: 84rem;
+  padding-left: 38rem;
+  width: 15% !important;
+  height: auto !important;
+}
+
+.pepsi {
+  width: 29% !important;
+  height: auto !important;
+  padding-top: 25rem;
+  padding-left: 17rem;
+  margin-left: 0.8rem;
+}
+
+.pep {
+  width: 7% !important;
+  height: auto !important;
+  padding-top: 70rem;
+  padding-left: 17rem;
+}
+
+.coke {
+  width: 60% !important;
+  height: auto !important;
+  padding-top: 26rem;
+  padding-left: 35rem;
+  margin-left: 3rem;
+}
+
+.coca {
+  width: 17% !important;
+  height: auto !important;
+  padding-top: 70rem;
+  padding-left: 37rem;
+}
+
+.bisleri {
+  width: 85% !important;
+  height: auto !important;
+  padding-top: 26rem;
+  padding-left: 60rem;
+  margin-left: 4.5rem;
+}
+
+.bis {
+  width: 15% !important;
+  height: auto !important;
+  padding-top: 70rem;
+  padding-left: 63rem;
+}
+
+.microsoft {
+  width: 10% !important;
+  height: auto !important;
+  padding-top: 48rem;
+  padding-left: 18rem;
+}
+
+.micros {
+  width: 7% !important;
+  height: auto !important;
+  padding-top: 83rem;
+  padding-left: 18rem;
+}
+
+.container2 h2 {
+  position: absolute;
+  z-index: 2;
+  font-size: 1.5rem;
+  color: #e2e709;
+  top: 14rem;
+  left: 13rem;
+}
+
+.container2 h3 {
+  position: absolute;
+  z-index: 2;
+  font-size: 2.5rem;
+  color: #eeeeee;
+  top: 20rem;
+  left: 10%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container2 h4 {
+  position: absolute;
+  z-index: 2;
+  font-size: 2.5rem;
+  color: #e2e709;
+  top: 35rem;
+  left: 21%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container2 h5 {
+  position: absolute;
+  z-index: 2;
+  font-size: 2.5rem;
+  color: #e2e709;
+  top: 35rem;
+  left: 45%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container2 h6 {
+  position: absolute;
+  z-index: 2;
+  font-size: 2.5rem;
+  color: #e2e709;
+  top: 35rem;
+  left: 75%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container2 h1 {
+  position: absolute;
+  z-index: 2;
+  font-size: 2.5rem;
+  color: #eeeeee;
+  top: 43rem;
+  left: 10%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container2 h7 {
+  position: absolute;
+  z-index: 2;
+  font-size: 2.5rem;
+  color: #eeeeee;
+  top: 63rem;
+  left: 10%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.micro {
+  position: absolute;
+  z-index: 2;
+  font-size: 2rem;
+  color: #e2e709;
+  top: 57.5rem;
+  left: 18%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.peptxt {
+  position: absolute;
+  z-index: 2;
+  font-size: 2rem;
+  color: #e2e709;
+  top: 77rem;
+  left: 21%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.coketxt {
+  position: absolute;
+  z-index: 2;
+  font-size: 2rem;
+  color: #e2e709;
+  top: 77rem;
+  left: 46.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.bistxt {
+  position: absolute;
+  z-index: 2;
+  font-size: 2rem;
+  color: #e2e709;
+  top: 77rem;
+  left: 79%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.microstxt {
+  position: absolute;
+  z-index: 2;
+  font-size: 2rem;
+  color: #e2e709;
+  top: 90rem;
+  left: 18%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.goldtxt {
+  position: absolute;
+  z-index: 2;
+  font-size: 2rem;
+  color: #e2e709;
+  top: 90rem;
+  left: 46.5%;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 30rem;
+}
