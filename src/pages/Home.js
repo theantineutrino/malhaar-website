@@ -5,6 +5,8 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Card from "../components/Card";
 import ContactUs from "../components/ContactUs";
+import ImageCarousal from "../components/ImageCarousal";
+import Footer from "../ux/Footer";
 
 function Home() {
   return (
@@ -35,6 +37,9 @@ function Home() {
       <div className="App--page1">
         <Header />
         <Hero />
+        <ImageCarousal />
+        <ContactUs />
+        <Footer />
       </div>
     </div>
   );

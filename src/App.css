@@ -23,7 +23,15 @@
 /* ................................................................................................... */
 .hero--img {
   display: flex;
+  height: 70rem;
   flex-direction: column;
+  align-items: center;
+}
+.hero--img1 {
+  width: 400px;
+}
+.hero--text {
+  width: 400px;
 }
 
 .hero--crowds {

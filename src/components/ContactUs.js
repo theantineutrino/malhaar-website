@@ -1,5 +1,4 @@
 import "../App.css";
-import Footer from "../ux/Footer";
 import mail from "../images/envel.png";
 import phone from "../images/phone.png";
 import loc from "../images/loc.png";
@@ -41,7 +40,6 @@ export default function ContactUs() {
           </form>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
