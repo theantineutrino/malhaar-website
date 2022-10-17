@@ -1,7 +1,5 @@
 .App {
-  display: block;
-  height: 10rem;
-  align-self: center;
+  width: 100%;
 }
 .header--container {
   position: relative;
@@ -13,7 +11,7 @@
 }
 .App--page1 {
   background-color: black;
-  height: 1000px;
+  /* height: 1000px; */
 }
 .header--menu {
   position: absolute;
@@ -22,35 +20,39 @@
 .header--element {
   padding: 10px;
 }
-.App--hero {
-  display: block;
-  position: relative;
-}
+/* ................................................................................................... */
 .hero--img {
-  position: relative;
-}
-.hero--text {
-  position: absolute;
-  left: 32vw;
-  /* transition: "1s, transform 2s";
-  transform: scale(1.5); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero--img1 {
-  position: absolute;
-  left: 32vw;
+  width: 400px;
+}
+.hero--text {
+  width: 400px;
+}
+.hero--crowds {
+  background-color: black;
+  height: 400px;
+  position: relative;
+  width: 100%;
 }
 .hero--crowd1 {
+  width: 100%;
   position: absolute;
-  top: 350px;
+  /* bottom: 0;
+  left: 0; */
 }
 .hero--crowd2 {
+  width: 100%;
   position: absolute;
-  top: 450px;
 }
 .hero--crowd3 {
+  width: 100%;
   position: absolute;
-  top: 638px;
 }
+/* ................................................................................................... */
 .App--page2 {
   display: flex;
 }
