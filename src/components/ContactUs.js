@@ -26,7 +26,7 @@ export default function ContactUs() {
             Rohini, PSP-4, New Delhi, Delhi 110085
           </div>
         </div>
-        <div className="w-1/2 pl-9 pt-10 pb-10 items-center h-96 bg-cont h-max drop-shadow-2xl">
+        <div className="w-1/2 pl-9 pt-10 pb-10 items-center bg-cont h-max drop-shadow-2xl">
           <h1 className="text-5xl font-bold p-4">Say Something..!!</h1>
           <form action="" className="flex flex-col gap-3">
             <label htmlFor=""></label>
