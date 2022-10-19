@@ -12,7 +12,7 @@ export default function Footer() {
         <img src={ins} alt="" className="footer--instagram" />
         <div className="footer--menu">
           <ul>
-            <li>ABOUT US</li>
+            <li>HACKATHON</li>
             <li>EVENTS</li>
             <li>TICKETS</li>
             <li>SPONSORS</li>

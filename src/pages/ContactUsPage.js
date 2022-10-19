@@ -1,5 +1,5 @@
 import "../App.css";
-import Footer from "../components/Footer";
+import Footer from "../ux/Footer";
 import ContactUs from "../components/ContactUs";
 export default function ContactUsPage() {
   return (
