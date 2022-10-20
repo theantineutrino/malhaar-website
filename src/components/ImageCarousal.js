@@ -6,7 +6,7 @@ const ImageCarousal = () => {
   return (
     <div className={classes.container}>
       <div className={classes.img}>
-        <img className={classes} src={images[i].img} />
+        <img className={classes} src={images[i].img} alt="frame" />
         <div>
           <button
             className={classes.btn}
