@@ -135,9 +135,9 @@ export default function Hackathon() {
               <label htmlFor="">Name</label>
               <input
                 type="text"
-                onChange={handleChange}
+                // onChange={handleChange}
                 name="Name"
-                value={formData.Name}
+                // value={formData.Name}
                 className="p-2 rounded-sm focus:outline-temp text-black"
               />
             </div>
@@ -145,9 +145,9 @@ export default function Hackathon() {
               <label htmlFor="">Email Address</label>
               <input
                 type="text"
-                onChange={handleChange}
+                // onChange={handleChange}
                 name="email"
-                value={formData.EmailAddress}
+                // value={formData.EmailAddress}
                 className="p-2 rounded-sm focus:outline-temp text-black"
               />
             </div>
@@ -155,8 +155,8 @@ export default function Hackathon() {
               <label htmlFor="">Team Size</label>
               <input
                 type="text"
-                onChange={handleChange}
-                value={formData.TeamSize}
+                // onChange={handleChange}
+                // value={formData.TeamSize}
                 className="p-2 rounded-sm focus:outline-temp text-black"
               />
             </div>
