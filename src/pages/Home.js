@@ -1,9 +1,9 @@
 import "../App.css";
 
-import background from "../images/background.png";
+// import background from "../images/background.png";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import Card from "../components/Card";
+// import Card from "../components/Card";
 import ContactUs from "../components/ContactUs";
 import ImageCarousal from "../components/ImageCarousal";
 import Footer from "../ux/Footer";
