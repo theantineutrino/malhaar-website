@@ -6,7 +6,34 @@ import HackCard from "./HackCard";
 import ContactUs from "./ContactUs";
 import csilogo from "../images/csilogo.png";
 import Footer from "../ux/Footer";
+// import React from "react";
 export default function Hackathon() {
+  // const [formData, setFormData] = React.useState({
+  //   Name: "",
+  //   EmailAddress: "",
+  //   TeamSize: "",
+  // });
+  // const getData = async () => {
+  //   try {
+  //     const res = await fetch(
+  //       "https://sheet.best/api/sheets/548bd2d0-d36d-48c9-a8d9-e6181acaf871"
+  //     );
+  //     const data = formData;
+  //     setFormData(data);
+  //   } catch (error) {}
+  // };
+  // React.useEffect(() => {
+  //   getData();
+  // }, []);
+  // function handleChange(event) {
+  //   const { name, value, type, checked } = event.target;
+  //   setFormData((prevFormData) => {
+  //     return {
+  //       ...prevFormData,
+  //       [name]: type === "checkbox" ? checked : value,
+  //     };
+  //   });
+  // }
   return (
     <div>
       <section className="bg-temp text-red-50">
@@ -108,21 +135,29 @@ export default function Hackathon() {
               <label htmlFor="">Name</label>
               <input
                 type="text"
-                className="p-2 rounded-sm focus:outline-temp"
+                onChange={handleChange}
+                name="Name"
+                value={formData.Name}
+                className="p-2 rounded-sm focus:outline-temp text-black"
               />
             </div>
             <div className="flex flex-col">
               <label htmlFor="">Email Address</label>
               <input
                 type="text"
-                className="p-2 rounded-sm focus:outline-temp"
+                onChange={handleChange}
+                name="email"
+                value={formData.EmailAddress}
+                className="p-2 rounded-sm focus:outline-temp text-black"
               />
             </div>
             <div className="flex flex-col">
               <label htmlFor="">Team Size</label>
               <input
                 type="text"
-                className="p-2 rounded-sm focus:outline-temp"
+                onChange={handleChange}
+                value={formData.TeamSize}
+                className="p-2 rounded-sm focus:outline-temp text-black"
               />
             </div>
 
