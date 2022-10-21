@@ -6,7 +6,7 @@ import HackCard from "./HackCard";
 import ContactUs from "./ContactUs";
 import csilogo from "../images/csilogo.png";
 import Footer from "../ux/Footer";
-import { Link } from "react-router-dom";
+
 // import React from "react";
 export default function Hackathon({ overlayOpen, setOverlayOpen }) {
   // const [formData, setFormData] = React.useState({
