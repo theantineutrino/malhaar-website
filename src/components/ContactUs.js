@@ -1,9 +1,42 @@
 import "../App.css";
+import { useRef, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import mail from "../images/envel.png";
 import phone from "../images/phone.png";
 import loc from "../images/loc.png";
 import bg from "../images/contactbg.png";
+
 export default function ContactUs() {
+  const formRef = useRef(null);
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycby5tbqqzgeQMK-uCjwGns5Sg2TQmudr3OKih3-vZ462_-FbEnQ0r8WLemI-XPNA1nil/exec";
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(loading);
+
+    fetch(scriptURL, {
+      method: "POST",
+      body: new FormData(formRef.current),
+    })
+      .then((res) => {
+        console.log("SUCCESSFULLY SUBMITTED");
+        toast.success(
+          "We've received your query and will contact you shortly",
+          {
+            position: toast.POSITION.TOP_RIGHT,
+          }
+        );
+        setLoading(false);
+      })
+      .catch((err) => console.log(err));
+
+    e.target.reset();
+  };
+
   return (
     <div>
       <div className="md:flex " style={{ backgroundImage: "url(" + bg + ")" }}>
@@ -32,20 +65,42 @@ export default function ContactUs() {
           <h1 className="text-3xl md:text-5xl font-bold p-4">
             Say Something..!!
           </h1>
-          <form action="" className="flex flex-col gap-1 md:gap-3">
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-3 md:gap-3"
+          >
             <label htmlFor=""></label>
-            <input type="text" className="p-2 rounded-sm max-w-lg" />
+            <input
+              name="Name"
+              type="text"
+              className="p-2 rounded-sm max-w-lg"
+              placeholder="Your Name..."
+            />
 
-            <input type="text" className="p-2 rounded-sm max-w-lg" />
+            <input
+              type="text"
+              name="Email"
+              className="p-2 rounded-sm max-w-lg"
+              placeholder="Your Mail..."
+            />
 
-            <input type="text" className="p-2 rounded-sm max-w-lg h-60" />
-
-            <button className="max-w-lg bg-red-600 p-2 rounded-md mb-5 text-white text-lg font-semibold">
-              SEND
+            <textarea
+              type="text"
+              name="Message"
+              className="p-2 rounded-sm max-w-lg h-60"
+              placeholder="Message..."
+            />
+            <button
+              type="submit"
+              className="max-w-lg bg-red-500 hover:bg-red-700 transition-all duration-300 ease-out drop-shadow-md p-2 rounded-md mb-5 text-white text-lg font-semibold"
+            >
+              {loading ? "Loading..." : "SEND"}
             </button>
           </form>
         </div>
       </div>
+      <ToastContainer theme="dark" autoClose={5000} />
     </div>
   );
 }

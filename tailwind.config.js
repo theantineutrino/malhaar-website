@@ -10,6 +10,9 @@ module.exports = {
         temp: "#240554",
         cont: "#EEEEEE",
       },
+      fontFamily: {
+        open: ["open sans", "sans-serif"],
+      },
     },
   },
   plugins: [],
