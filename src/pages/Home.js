@@ -7,35 +7,18 @@ import Hero from "../components/Hero";
 import ContactUs from "../components/ContactUs";
 import ImageCarousal from "../components/ImageCarousal";
 import Footer from "../ux/Footer";
+import Dropdown from "../ux/Dropdown";
+import { useState } from "react";
 
 function Home() {
+  const [overlayOpen, setOverlayOpen] = useState(false);
   return (
-    // <div className="App">
-    //   <div
-    //     className="App--page1"
-    //     style={{
-    //       backgroundImage: "url(" + background + ")",
-    //       backgroundSize: "cover",
-    //       height: "195vh",
-    //     }}
-    //   >
-    //     <Header />
-    //     <div className="App--hero">
-    //       <Hero />
-    //     </div>
-    //     <Dropdown />
-    //   </div>
-    //   <div className="App--page2">
-    //     <Card title="25+" content="hello this is a mic test lmao lmao" />
-    //     <Card title="25+" content="hello this is a mic test lmao lmao" />
-    //     <Card title="25+" content="hello this is a mic test lmao lmao" />
-    //     <Card title="25+" content="hello this is a mic test lmao lmao" />
-    //   </div>
-    //   <ContactUs />
-    // </div>
     <div className="App">
-      <div className="App--page1">
-        <Header />
+      <div className="w-full min-h-screen bg-black">
+        <div>
+          <Header overlayOpen={overlayOpen} setOverlayOpen={setOverlayOpen} />
+          <Dropdown overlayOpen={overlayOpen} setOverlayOpen={setOverlayOpen} />
+        </div>
         <Hero />
         <ImageCarousal />
         <ContactUs />
