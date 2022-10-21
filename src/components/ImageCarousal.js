@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import classes from "./ImageCarousal.module.css";
 import { images } from "./Images";
+
 const ImageCarousal = () => {
   const [i, setI] = useState(0);
   return (

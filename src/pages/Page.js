@@ -7,9 +7,12 @@ import Sponsers from "./Sponsers";
 import HackathonPage from "./HackathonPage";
 import Tickets from "./Tickets";
 
+import ScrollTop from "../utils/ScrollTop";
+
 function Page() {
   return (
     <BrowserRouter>
+      <ScrollTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<Events />} />
