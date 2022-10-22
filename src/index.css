@@ -12,6 +12,6 @@
 
 @layer components {
   .nav-link {
-    @apply h-full w-full py-2 text-4xl text-white text-center;
+    @apply h-full w-full py-2 text-4xl text-white hover:text-yellow-400 text-center;
   }
 }
