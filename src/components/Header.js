@@ -1,12 +1,13 @@
 import logo from "../images/logomal.png";
 import ins from "../images/insta.png";
+import { Link } from "react-router-dom";
 
 export default function Header({ overlayOpen, setOverlayOpen }) {
   return (
     <section className="flex justify-between items-start px-3">
-      <div className="">
+      <Link to="/">
         <img src={logo} alt="Malhaar" />
-      </div>
+      </Link>
 
       <div className="flex flex-col items-center justify-center gap-3">
         <div className="z-20 relative w-10 h-10 text-white focus:outline-none ">
