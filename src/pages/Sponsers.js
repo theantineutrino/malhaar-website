@@ -1,12 +1,10 @@
 import React from "react";
 import Sponsors from "../components/Sponsorele";
-import SpHeader from "../components/SpHeader";
 import Footer from "../ux/Footer";
 import "../App.css";
 function Sponsers() {
   return (
     <div className="sponsor--page">
-      <SpHeader />
       <Sponsors />
       <Footer />
     </div>
