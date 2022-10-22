@@ -124,10 +124,7 @@ export default function Hackathon({ overlayOpen, setOverlayOpen }) {
               mollis lacinia nunc.
             </p>
           </div>
-          <div className="flex px-10 flex-col md:flex-row items-center gap-4 justify-center mt-10 md:mt-32">
-            <h1 className="w-full md:w-1/3 text-2xl md:text-7xl font-semibold">
-              Problem Statement
-            </h1>
+          <div className="flex px-10 flex-col-reverse md:flex-row items-center gap-4 justify-center mt-10 md:mt-32">
             <div>
               <p className="max-w-3xl ">
                 Teams will be provided with a problem statement to rack their
@@ -145,6 +142,9 @@ export default function Hackathon({ overlayOpen, setOverlayOpen }) {
                 aliquam ex, mollis lacinia nunc.
               </p>
             </div>
+            <h1 className="w-full md:w-1/3 text-2xl md:text-7xl font-semibold">
+              Problem Statement
+            </h1>
           </div>
         </section>
         <section className="flex flex-col md:flex-row px-10 md:px-32 mt-10 md:mt-32 items-center">
