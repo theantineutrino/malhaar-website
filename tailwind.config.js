@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         temp: "#240554",
         cont: "#EEEEEE",
+        hack: "#252a34",
       },
       fontFamily: {
         open: ["open sans", "sans-serif"],
