@@ -4,10 +4,12 @@ import "../App.css";
 import { Link } from "react-router-dom";
 export default function Footer() {
   return (
-    <div className="bg-black md:flex ">
-      <Link to="/" className="m-auto w-1/3 md:w-1/4 md:h-1/4 items-center">
-        <img src={logo} alt="malhaar-logo" />
-      </Link>
+    <div className="bg-black md:flex">
+      <div className="m-auto w-1/3 md:w-1/4 mt-5">
+        <Link to="/">
+          <img src={logo} alt="malhaar-logo" />
+        </Link>
+      </div>
       <div className="text-white ">
         <p className="md:w-1/2 p-10">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue
