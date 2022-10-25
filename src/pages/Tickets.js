@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import { PDFDocument, StandardFont } from "pdf-lib";
+// import { PDFDocument, StandardFont } from "pdf-lib";
 
 import Header from "../components/Header";
 import Dropdown from "../ux/Dropdown";
@@ -13,31 +13,31 @@ function Tickets() {
   const scriptURL =
     "https://script.google.com/macros/s/AKfycbxmEtC5Gcjk1HmXB5tg2sWID20V8YDdwPLVtqr14hGjUx_43BAt9phItcSz_AhO7Z2-Iw/exec";
 
-  async function modifyPDF() {
-    const formUrl = await fetch(
-      "https://pdfhost.io/edit?doc=07b359f0-1b69-4d53-b429-f72e62b29d04"
-    );
-    const formPdfBytes = await fetch(formUrl).then((res) => res.arrayBuffer());
+  // async function modifyPDF() {
+  //   const formUrl = await fetch(
+  //     "https://pdfhost.io/edit?doc=07b359f0-1b69-4d53-b429-f72e62b29d04"
+  //   );
+  //   const formPdfBytes = await fetch(formUrl).then((res) => res.arrayBuffer());
 
-    const document = await PDFDocument.load(formPdfBytes);
+  //   const document = await PDFDocument.load(formPdfBytes);
 
-    const courierBoldFont = await document.embedFont(StandardFont.Courier);
-    const firstPage = document.getPage(0);
+  //   const courierBoldFont = await document.embedFont(StandardFont.Courier);
+  //   const firstPage = document.getPage(0);
 
-    firstPage.moveTo(0, 0);
-    firstPage.drawText(data.name, {
-      font: courierBoldFont,
-      size: 12,
-    });
+  //   firstPage.moveTo(0, 0);
+  //   firstPage.drawText(data.name, {
+  //     font: courierBoldFont,
+  //     size: 12,
+  //   });
 
-    const pdfBytes = await document.save();
+  //   const pdfBytes = await document.save();
 
-    let blob = new Blob([pdfBytes], { type: "application/pdf" });
-    let link = document.createElement("a");
-    link.href = window.URL.createObjectURL(blob);
-    link.download = "myFile.pdf";
-    link.click();
-  }
+  //   let blob = new Blob([pdfBytes], { type: "application/pdf" });
+  //   let link = document.createElement("a");
+  //   link.href = window.URL.createObjectURL(blob);
+  //   link.download = "myFile.pdf";
+  //   link.click();
+  // }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -56,7 +56,7 @@ function Tickets() {
           }
         );
 
-        modifyPDF().catch((err) => console.log(err));
+        // modifyPDF().catch((err) => console.log(err));
       })
       .catch((err) => console.log(err));
 
