@@ -57,3 +57,9 @@
       -0.04em -0.025em 0 #fffc00;
   }
 }
+
+@media screen and (min-wdith: 768px) {
+  .container {
+    font-size: 100px;
+  }
+}
