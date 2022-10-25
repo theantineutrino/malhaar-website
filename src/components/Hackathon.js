@@ -1,10 +1,10 @@
 import logo from "../images/logomal.png";
-
+import jondoe from "../images/jondoe.png";
 import ins from "../images/insta.png";
 import csilogo from "../images/csilogo.png";
 import Footer from "../ux/Footer";
 import { useRef } from "react";
-
+import Glitch from "./Glitch";
 import college from "../images/college.png";
 import {
   Cvent,
@@ -19,7 +19,6 @@ import {
   Prizes,
   Person,
   Podium,
-  Akash,
 } from "../images/partners";
 import mark from "../images/mark.png";
 import { Link } from "react-router-dom";
@@ -101,32 +100,32 @@ export default function Hackathon({ overlayOpen, setOverlayOpen }) {
   const mentors = [
     {
       id: 1,
-      name: "Papa Mustacho",
-      image: Akash,
+      name: "John Doe",
+      image: jondoe,
       position: "CEO, Mustacho Inc.",
       subTitle:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue justo, porttitor vitae felis nec, molestie sodale",
     },
     {
       id: 2,
-      name: "Papa Mustacho",
-      image: Akash,
+      name: "John Doe",
+      image: jondoe,
       position: "CEO, Mustacho Inc.",
       subTitle:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue justo, porttitor vitae felis nec, molestie sodale",
     },
     {
       id: 3,
-      name: "Papa Mustacho",
-      image: Akash,
+      name: "John Doe",
+      image: jondoe,
       position: "CEO, Mustacho Inc.",
       subTitle:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue justo, porttitor vitae felis nec, molestie sodale",
     },
     {
       id: 4,
-      name: "Papa Mustacho",
-      image: Akash,
+      name: "John Doe",
+      image: jondoe,
       position: "CEO, Mustacho Inc.",
       subTitle:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue justo, porttitor vitae felis nec, molestie sodale",
@@ -223,10 +222,17 @@ export default function Hackathon({ overlayOpen, setOverlayOpen }) {
           </div>
         </div>
 
+<<<<<<< HEAD
         <div className="w-11/12 mx-auto h-screen lg:h-[3500px] xl:h-[3150px] relative">
           <div className="h-full lg:mt-6 xl:mt-8">
             <h1 className="font-bold font-open text-white lg:text-4xl xl:text-7xl tracking-tighter">
               Malhaar <br /> Hackerama
+=======
+        <div className="w-11/12 mx-auto h-screen md:h-[500vh] relative">
+          <div className="h-full mt-8">
+            <h1 className="font-bold font-open text-white text-4xl md:text-7xl  tracking-tighter">
+              <Glitch />
+>>>>>>> 14f24a0bfc824810c2766f7bdd6875440157a3a3
             </h1>
             <span className="text-red-600 font-open font-medium lg:text-sm xl:text-xl align-middle">
               learn | teach | explore
