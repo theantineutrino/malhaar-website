@@ -1,0 +1,13 @@
+export { default as Cvent } from "./cvent.png";
+export { default as Hack2Skill } from "./h2s.png";
+export { default as Samsung } from "./samsung.png";
+export { default as JohnJacobs } from "./johnjacobs.png";
+export { default as Team } from "./team.png";
+export { default as Pizza } from "./pizza.png";
+export { default as Time } from "./time.png";
+export { default as Chair } from "./chair.png";
+export { default as Visor } from "./visor.png";
+export { default as Prizes } from "./prizes.png";
+export { default as Person } from "./person.png";
+export { default as Podium } from "./podium.png";
+export { default as Akash } from "./akash.jpg";
