@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import "./App.css";
 import background from "./images/background.png";
 import Header from "./components/Header";
@@ -33,7 +34,15 @@ function App() {
 
       <ContactUs />
     </div>
+=======
+
+
+import Page from "./pages/Page";
+function App() {
+  return (
+    <Page />
+>>>>>>> 2ecc4fe2d7c6d8821ef93f8837e8bb24ff29a330
   );
 }
-
 export default App;
+
