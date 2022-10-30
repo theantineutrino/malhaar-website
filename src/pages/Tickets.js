@@ -5,6 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import Header from "../components/Header";
 import Dropdown from "../ux/Dropdown";
 import Footer from "../ux/Footer";
+import axios from "axios";
 
 function Tickets() {
   const [overlayOpen, setOverlayOpen] = useState(false);
@@ -13,32 +14,6 @@ function Tickets() {
   const scriptURL =
     "https://script.google.com/macros/s/AKfycbxmEtC5Gcjk1HmXB5tg2sWID20V8YDdwPLVtqr14hGjUx_43BAt9phItcSz_AhO7Z2-Iw/exec";
 
-  // async function modifyPDF() {
-  //   const formUrl = await fetch(
-  //     "https://pdfhost.io/edit?doc=07b359f0-1b69-4d53-b429-f72e62b29d04"
-  //   );
-  //   const formPdfBytes = await fetch(formUrl).then((res) => res.arrayBuffer());
-
-  //   const document = await PDFDocument.load(formPdfBytes);
-
-  //   const courierBoldFont = await document.embedFont(StandardFont.Courier);
-  //   const firstPage = document.getPage(0);
-
-  //   firstPage.moveTo(0, 0);
-  //   firstPage.drawText(data.name, {
-  //     font: courierBoldFont,
-  //     size: 12,
-  //   });
-
-  //   const pdfBytes = await document.save();
-
-  //   let blob = new Blob([pdfBytes], { type: "application/pdf" });
-  //   let link = document.createElement("a");
-  //   link.href = window.URL.createObjectURL(blob);
-  //   link.download = "myFile.pdf";
-  //   link.click();
-  // }
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -46,9 +21,11 @@ function Tickets() {
       method: "POST",
       body: new FormData(formRef.current),
     })
-      .then((res) => {
+      .then(async (res) => {
         console.log("SUCCESSFULLY SUBMITTED");
         console.log(formRef.current);
+
+        await axios.post("http://localhost:5000/modify", data.name);
         toast.success(
           "Congrats you got registered! Check your email for your ticket",
           {
@@ -56,11 +33,9 @@ function Tickets() {
           }
         );
 
-        // modifyPDF().catch((err) => console.log(err));
+        setData({ ...data, name: "", email: "", phone: "" });
       })
       .catch((err) => console.log(err));
-
-    e.target.reset();
   };
 
   return (

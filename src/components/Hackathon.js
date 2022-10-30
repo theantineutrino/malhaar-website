@@ -221,39 +221,40 @@ export default function Hackathon({ overlayOpen, setOverlayOpen }) {
             </div>
           </div>
         </div>
-        <div className="w-11/12 mx-auto md:h-screen lg:h-[3500px] xl:h-[3150px] relative">
+
+        <div className="w-11/12 mx-auto h-screen md:h-[2000px] lg:h-[3500px] xl:h-[3150px] relative">
           <div className="h-full lg:mt-6 xl:mt-8">
             <h1 className="font-bold font-open text-4xl text-white lg:text-4xl xl:text-7xl tracking-tighter">
               <Glitch />
             </h1>
-            <span className="text-red-600 font-open font-medium lg:text-sm xl:text-xl align-middle">
+            <span className="text-red-600 font-open font-medium text-xs lg:text-sm xl:text-xl align-middle">
               learn | teach | explore
             </span>
-            <p className="font-open lg:text-xs xl:text-base text-gray-600 md:w-1/3 lg:py-3 xl:py-6">
+            <p className="font-open lg:text-xs xl:text-base text-gray-600 md:w-2/3 lg:w-1/3 lg:py-3 xl:py-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               augue justo, porttitor vitae felis nec, molestie sodales mi.
               Suspendisse eget aliquam ex, mollis lacinia nunc.JAKFNMDSKNLorem
               ipsum dolor sit amet, consectetur adipiscing elit. Duis augue
               justo
             </p>
-            <button className="z-40 font-open text-white font-semibold bg-red-600 hover:bg-red-800 lg:px-4 xl:px-6 lg:py-1 xl:py-2 rounded-md">
+            <button className="z-40 font-open text-white font-semibold bg-red-600 hover:bg-red-800 p-1 lg:px-4 xl:px-6 lg:py-1 xl:py-2 rounded-md">
               Register
             </button>
 
             {/* Details Section */}
-            <div className="lg:mt-2 lg:ml-20 xl:mt-3 flex justify-around items-center gap-2">
+            <div className="md:mt-5 lg:mt-2 md:ml-20 lg:ml-20 xl:mt-3 flex justify-around items-center gap-2">
               <span>
                 <img
                   src={college}
                   alt=""
-                  className="w-64 lg:h-[148px] lg:w-[148px] xl:h-[235px] xl:w-[235px] "
+                  className="w-64 md:h-[120px] md:w-[120px] lg:h-[148px] lg:w-[148px] xl:h-[235px] xl:w-[235px] "
                 />
               </span>
               <span className="flex flex-col">
                 <h4 className="text-red-600 font-normal md:font-medium font-open">
                   When?
                 </h4>
-                <h2 className="text-white font-semibold font-open lg:w-28 xl:w-20">
+                <h2 className="text-white font-semibold font-open md:w-28 lg:w-28 xl:w-20">
                   23rd - 24th November 2022
                 </h2>
               </span>
@@ -261,7 +262,7 @@ export default function Hackathon({ overlayOpen, setOverlayOpen }) {
                 <h4 className="text-red-600  font-normal md:font-medium font-open">
                   Where?
                 </h4>
-                <h2 className="text-white font-semibold font-open lg:w-48 xl:w-40">
+                <h2 className="text-white font-semibold font-open md:w-52 lg:w-48 xl:w-40">
                   Bhagwan Parshuram Institute of Technology, Delhi
                 </h2>
               </span>
@@ -269,7 +270,7 @@ export default function Hackathon({ overlayOpen, setOverlayOpen }) {
 
             {/* Sponsor Section */}
             <div
-              className=" lg:mt-2 xl:mt-6 w-full grid grid-cols-4 gap-10 lg:px-10 lg:py-11 xl:p-20"
+              className=" md:mt-10 lg:mt-2 xl:mt-6 w-full grid grid-cols-4 gap-10 lg:px-10 lg:py-11 xl:p-20"
               style={{ background: "#21262f" }}
             >
               <div
@@ -324,7 +325,7 @@ export default function Hackathon({ overlayOpen, setOverlayOpen }) {
             </div>
 
             {/* Prize Section */}
-            <h4 className="text-white text-center font-open lg:ml-12 lg:mt-3 xl:mt-20 font-medium lg:text-lg xl:text-xl">
+            <h4 className="text-white text-center font-open lg:ml-12 md:mt-6 lg:mt-3 xl:mt-20 font-medium lg:text-lg xl:text-xl">
               Details
             </h4>
 
@@ -337,7 +338,7 @@ export default function Hackathon({ overlayOpen, setOverlayOpen }) {
                   Worth of Cash Prizes
                 </h3>
               </div>
-              <div className="font-open lg:w-96 xl:w-1/2">
+              <div className="font-open  lg:w-96 xl:w-1/2">
                 <h2 className="text-white font-bold lg:text-sm xl:text-base">
                   Tell me, I will forget. Show me, I might remember, Involve me
                   and I will understand.
@@ -448,7 +449,7 @@ export default function Hackathon({ overlayOpen, setOverlayOpen }) {
             </div>
 
             {/* Mentors section */}
-            <h4 className="text-white text-center font-open lg:mt-16 xl:mt-36 xl:mb-6 font-bold lg:text-base xl:text-xl">
+            <h4 className="text-white text-center font-open lg:mt-24 xl:mt-36 xl:mb-6 font-bold lg:text-base xl:text-xl">
               Mentors and Judges
             </h4>
 
@@ -456,7 +457,7 @@ export default function Hackathon({ overlayOpen, setOverlayOpen }) {
               {mentors.map((item) => (
                 <div
                   key={item.id}
-                  className="flex justify-center md:w-3/4 gap-3"
+                  className="flex justify-center md:w-full gap-3"
                 >
                   <img
                     src={item.image}
@@ -477,7 +478,7 @@ export default function Hackathon({ overlayOpen, setOverlayOpen }) {
             </div>
 
             {/* Hackerama Sign */}
-            <div className="bg-red-600 text-white font-open font-semibold px-4 py-2 rounded-md lg:-mt-7 xl:mt-1 lg:-ml-[480px] xl:ml-[600px] w-max">
+            <div className="bg-red-600 text-white font-open font-semibold px-4 py-2 rounded-md lg:mt-12 xl:-mt-1 lg:ml-[480px] xl:ml-[600px] w-max">
               Hackerama Awaits You!
             </div>
 
@@ -498,7 +499,7 @@ export default function Hackathon({ overlayOpen, setOverlayOpen }) {
           <svg
             width="1629"
             height="4443"
-            className="hidden md:block bg-ysellow-500 w-5/6 lg:w-3/4 xl:w-5/6 h-full absolute top-0 lg:-top-[906px] xl:-top-[210px]  right-0 mt-20"
+            className="md:hidden lg:block bg-ysellow-500 w-5/6 lg:w-3/4 xl:w-5/6 h-full absolute top-0 md:-top-[230px] lg:-top-[906px] xl:-top-[210px] right-0 mt-20"
             viewBox="0 0 1629 4443"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
